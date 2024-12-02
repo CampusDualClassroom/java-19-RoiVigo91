@@ -57,23 +57,23 @@ public class Exercise19 {
 
 
     public static String getBidimensionalString(int[][] intArrayBi) {
-        StringBuilder stringBuilder = new StringBuilder();
+        StringBuilder builder = new StringBuilder();
         for (int i = 0; i < intArrayBi.length; i++) {
-            stringBuilder.append(getUnidimensionalString(intArrayBi[i])).append("\n");
+            builder.append(getUnidimensionalString(intArrayBi[i])).append("\n");
         }
-        return stringBuilder.toString().trim();
+        return builder.toString().trim();
     }
 
 
     public static String getUnidimensionalString(int[] uniArray) {
-        StringBuilder stringBuilder = new StringBuilder();
+        StringBuilder builder = new StringBuilder();
         for (int i = 0; i < uniArray.length; i++) {
-            stringBuilder.append(uniArray[i]);
+            builder.append(uniArray[i]);
             if (i < uniArray.length - 1) {
-                stringBuilder.append(" ");
+                builder.append(" ");
             }
         }
-        return stringBuilder.toString();
+        return builder.toString();
 
     }
 
